@@ -1,0 +1,76 @@
+/* centered columns styles */
+.row-centered {text-align:center;}
+.col-centered {
+    display:inline-block;
+    float: none;/* reset the text-align */
+    text-align:center;/* inline-block space fix */
+    margin-right:-4px;
+    /* max-width: 810px; */
+}
+
+@keyframes example {
+    0%   {bottom: -30px;}
+    30%   {bottom: -20px;}
+    65%  {bottom: 15px;}
+    100% {bottom: 0px;}
+}
+
+#myFooter{
+    opacity: 0;
+    position: fixed;
+    bottom: 0px;
+    right: 50px;
+    width: 135px;
+    background: black;
+    color: yellow;
+    padding: 0px;
+    height: 33px;
+    margin-top: 20px;
+    font-size: 12px;
+    text-align:center;
+    border-radius: 8px;
+    transition: bottom 2s, opacity 2s;
+    animation-name: example;
+    animation-duration: .5s;
+}
+
+#helpText{display: none;}
+#info{font-size: 20px;}
+.navbar {margin-bottom: 10px;}
+.red{color: #cc0033;}
+.right{float: right;}
+.left{float: left;}
+.table-title{
+    color: #7D2400;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-family: initial;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px solid #7D2400;
+}
+.table-top{
+    color: #7D2400;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-family: initial;
+    font-weight: bold;
+    text-align: left;
+}
+
+#lastRowBold tr td:last-child{
+    font-weight: bold;
+}
+
+.table-vat{
+    color: #1A5120;
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: initial;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px solid #1A5120;
+    margin-bottom: 5px;
+}
